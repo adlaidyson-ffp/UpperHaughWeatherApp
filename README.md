@@ -13,6 +13,7 @@ Here is my website and app for showing local weather forecasts in **Upper Haugh,
 *   **Shows Current Temp and Conditions in Celsius**
 *   **Shows an hourly forecast for upto 25 hours**
 *   **Shows a 7 day forecast**
+*   **Home Screen Widget for Android**
 *   **Shows Precipitation, Air Quality (AQI), UV Index, Sun & Moon**
 *   **Has light and dark mode**
 *   **Can sign up for a daily forecast for an automated email at 7:30AM**
