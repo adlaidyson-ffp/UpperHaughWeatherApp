@@ -1,0 +1,22 @@
+{
+  "name": "Upper Haugh Weather",
+  "description": "Local weather forecast for Upper Haugh",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#1e374d",
+  "theme_color": "#1e374d",
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/adlaidyson-ffp/FFPMisc2/refs/heads/main/UHWeatherApp-SquareLogo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://raw.githubusercontent.com/adlaidyson-ffp/FFPMisc2/refs/heads/main/UHWeatherApp-SquareLogo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
