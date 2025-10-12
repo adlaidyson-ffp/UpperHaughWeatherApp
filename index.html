@@ -32,6 +32,7 @@
      /* --- Color Variables (Modified for White body text) --- */ 
      :root { 
        --bg: #111827; 
+       --bg-end: #1e374d; /* NEW: Gradient end color */
        --general-text: #ffffff; /* General body text color (White) */
        --header-color: #94fdf8; /* Accent color for titles/headers */
        --card-bg: rgba(30, 55, 77, 0.5); /* Slightly less opaque for better glass effect */ 
@@ -41,6 +42,7 @@
      } 
      body.amoled-mode { 
        --bg: #000; 
+       --bg-end: #000; /* NEW: Use pure black for the end color in AMOLED for maximum darkness */
        --general-text: #ffffff; 
        --header-color: #ffffff; /* Use white in AMOLED mode for contrast */
        --card-bg: rgba(18, 18, 18, 0.75); 
@@ -58,10 +60,10 @@
        min-height: 100vh; 
        display: flex; 
        flex-direction: column; 
-       /* Fade transition for theme change */
-       transition: background-color 0.5s ease, color 0.5s ease; 
-       /* Subtle background gradient for depth */ 
-       background-image: linear-gradient(135deg, var(--bg) 0%, #1e374d 100%); 
+       /* Fade transition for theme change: ADDED background-image for smoother visual gradient change */
+       transition: background-color 0.5s ease, color 0.5s ease, background-image 0.5s ease; 
+       /* Subtle background gradient for depth - NOW uses the new --bg-end variable */ 
+       background-image: linear-gradient(135deg, var(--bg) 0%, var(--bg-end) 100%); 
      } 
      .weather-card { 
        /* --- Glassmorphism Effect --- */ 
@@ -333,7 +335,7 @@
      </section> 
 
      <!-- Call to Action Links --> 
-     <section class="mt-8 flex flex-col md:flex-row md:justify-center md:space-x-8 text-center cta-link-section"> 
+     <section class="mt-8 flex flex-col items-center md:flex-row md:justify-center md:space-x-8 text-center cta-link-section"> 
        <div class="space-y-4 md:items-center flex flex-col"> 
          <a href="https://adlaidyson.co.uk/UHWAppDailyForecastSignup" title="Sign up for a daily email forecast"> 
            Sign up for Daily Forecast 
