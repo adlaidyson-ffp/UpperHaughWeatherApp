@@ -5,7 +5,7 @@ Here is my website and app for showing local weather forecasts in **Upper Haugh,
 🖼️ Screenshot
 --------------
 
-![Weather Website Screenshot](https://raw.githubusercontent.com/adlaidyson-ffp/FFPMisc2/refs/heads/main/UHWeatherApp-ScreenshotDesktop.png)
+![Weather Website Screenshot](https://cdn.fusedframe.co.uk/misc/screenshots/UHWApp-Desktop.png)
 
 ✨ Features
 ----------
