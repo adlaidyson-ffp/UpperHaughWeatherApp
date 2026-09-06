@@ -926,7 +926,7 @@
     async function initRadarMap() {
         if (!leafletMapInstance) {
             leafletMapInstance = L.map('radar-map').setView([54.5, -2.5], 6);
-            L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+            L.tileLayer('https://basemaps.cartocdn.com/rastertiles/voyager/%7Bz%7D/%7Bx%7D/%7By%7D.png?key=cb1_2yuc_1_750cab16d8bc76d62dae3303', {
                 attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
                 subdomains: 'abcd',
                 maxZoom: 20
